@@ -1,3 +1,5 @@
+# File location: ~/.oh-my-zsh/themes/robbyrussell.zsh-theme
+
 # PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ ) %{$fg[cyan]%}%c%{$reset_color%}"
 PROMPT="%{$fg_bold[green]%}➜ %{$fg_bold[cyan]%}%n@%m:%{$fg_bold[yellow]%}%~%{$reset_color%}"
 

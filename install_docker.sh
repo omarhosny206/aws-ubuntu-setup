@@ -1,5 +1,6 @@
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh ./get-docker.sh --dry-run
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt install docker.io -y
 
 # grant non-root users access to Docker
 sudo groupadd docker

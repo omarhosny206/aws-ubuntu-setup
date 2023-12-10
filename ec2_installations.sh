@@ -11,13 +11,15 @@ sudo swapon /swapfile
 echo "/swapfile swap swap defaults 0 0" | sudo tee -a /etc/fstab
 sudo swapon -s
 
-# intstall docker & docker-compose
+# Install Docker & Docker Compose
 sudo apt install docker.io -y
 sudo groupadd docker
 sudo usermod -aG docker $USER
-newgrp docker
+source /etc/environment   # Ensure changes to group membership take effect in the current session
+
+# Install Docker Compose
 sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 
-# intstall micro (terminal text editor)
+# Install micro (terminal text editor)
 sudo apt install micro -y

@@ -2,7 +2,7 @@
 
 sudo apt update -y && sudo apt upgrade -y
 
-# 1 GB swap memory
+# create 1 GB of swap memory
 sudo swapon -s
 sudo fallocate -l 1G /swapfile
 sudo chmod 600 /swapfile
@@ -21,7 +21,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 # install micro (terminal text editor)
 sudo apt install micro -y
 
-# create 'docker' group, add user, and start a new session
+# create 'docker' group to ubuntu user (non-root user)
 sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker

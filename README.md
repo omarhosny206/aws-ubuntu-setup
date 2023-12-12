@@ -1,1 +1,1 @@
-# zsh
+# ubuntu-setup

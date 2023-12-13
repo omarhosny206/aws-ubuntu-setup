@@ -21,6 +21,9 @@ sudo chmod +x /usr/local/bin/docker-compose
 # install micro (terminal text editor)
 sudo apt install micro -y
 
+# clean developer directory
+cd .. && rm -rf ubuntu-setup
+
 # create 'docker' group to ubuntu user (non-root user)
 sudo groupadd docker
 sudo usermod -aG docker $USER

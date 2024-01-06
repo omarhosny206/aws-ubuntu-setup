@@ -29,7 +29,7 @@ cd /
 sudo apt install unzip -y
 sudo curl "https://d1vvhvl2y92vvt.cloudfront.net/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 sudo unzip awscliv2.zip
-sudo ./aws/install
+./aws/install
 
 # create 'docker' group to ubuntu user (non-root user)
 sudo groupadd docker

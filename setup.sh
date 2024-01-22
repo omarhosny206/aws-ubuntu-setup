@@ -22,7 +22,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo apt install micro -y
 
 # clean developer directory
-cd .. && rm -rf ubuntu-setup
+cd .. && rm -rf aws-ubuntu-setup
 
 # install AWS CLI V2
 cd /
